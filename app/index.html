@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire Bootstrap Nawal</title>
+	
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Poppins" rel="stylesheet">
+
+</head>
+<body>
+
+	
+<!--IMAGES DE FOND-->
+<div id="container-fluid back">
+  <div class="backRight"></div>
+  <div class="backRight2"></div>
+  <div class="backLeft"></div>
+  <div class="backLeft2"></div>
+</div>
+<!--FIN IMAGES DE FOND-->
+
+
+
+<!--///////////////////////////////////////////////////////-->
+
+
+
+<!--SLIDEBOX FORM GAUCHE-->
+<div id="slideBox">
+  <div class="topLayer">
+    <div class="left">
+      <div class="content">
+        <h2>Inscrivez-vous</h2>
+        <p>Inscrivez-vous pour continuer</p>
+        <div id="forminscription">
+			<div id="formeinscription2">
+<!--FORM-->
+				<form id="inscription">
+				 <div id="contenu"></div>  
+				 <!--nom -->
+				<div class="ui-widget">
+				
+				<label class="ly-label">Nom</label>
+				<input id="nom" type="text" class="ly-input" data-validetta="required">
+				</div>
+				<br>
+				<!-- prénom   -->
+				<div class="ui-widget">
+			
+				<label class="ly-label">Prénom</label>
+				<input id="prenom" type="text" class="ly-input" data-validetta="required">
+				</div>
+				<br>
+				<!--  date de naissance-->
+				<div class="ui-widget">
+				<label class="ly-label">Date de naissance</label>
+				<input type="text" id="datepicker" class="ly-input" data-validetta="required">
+   				<br>
+				</div>
+				<!--code postal-->
+				<div class="ui-widget">
+			    <label class="ly-label">Code postal</label>
+				<input id="cp" type="text" class="ly-input" data-validetta="required">
+				<br>
+				</div>
+				<!--ville-->
+				<div class="ui-widget">
+				<label class="ly-label">Ville</label>
+				<input id="ville" type="text" class="ly-input">
+				<br>
+				</div>
+				<!--e-mail-->
+				<div class="ui-widget">
+				<label class="ly-label">Email</label>
+				<input type ="email" id="email" class="ly-input" data-validetta="required">
+				<br>
+				</div>
+				<!--mot de passe-->
+				<div class="ui-widget">
+				<label class="ly-label">Votre mot de passe</label>
+				<input id="mdp" name="mdp" class="ly-input" data-validetta="required,minLength[6]">
+				<br>
+				</div>
+				<!--mot de pass confirmation-->
+				<div class="ui-widget">
+				<label class="ly-label">Confirmer votre mot de passe</label>
+				<input id="mdp2" class="ly-input" name="mdp2" data-validetta="required,equalTo[mdp]">
+				<br>
+				</div>
+				<!--
+				<div class="form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1" data-validetta="required">accepter conditions générales</label>
+			    </div>-->
+			    <!--accepter les CGU-->
+			    <div class="ui-widget">
+			   <input type="checkbox" data-validetta="required"> <span>J'ai lu et accepté les CGU.</span>
+				</div>
+			    
+<!-- BOUTONS   -->   
+				<button id="goLeft" class="off">Se connecter</button>
+				<button id="btn" type="submit">S'inscrire</button>
+<!--FIN BOUTONS-->
+   		
+    		</form> 
+<!--FIN FORM-->
+		
+			</div><!--formeinscription2-->
+		  </div><!--forminscription-->
+		</div><!--content-->
+	  </div><!--left-->
+       
+       
+
+     
+<!--///////////////////////////////////////////////////////-->     
+    
+    
+    
+    
+    <div class="right">
+      <div class="content">
+        <h2>Connection</h2>
+        <p>Connectez-vous pour continuer</p>
+         <div class="row">
+	      <div class="col-6"></div>
+
+<!--FORM-->
+				<form id="connection">
+				<!-- e-mail-->
+				<div class="ui-widget">
+				<label class="ly-label">Email</label>
+				<input type ="email" id="identifiant" name="identifiant" class="ly-input" data-validetta="required">
+				<br>
+				</div>
+				<!--mot de passe-->		
+					
+				<div class="ui-widget">
+				<label class="ly-label">Mot de passe</label>
+				<input id="mdp3" name="mdp3" class="ly-input" data-validetta="required,minLength[6]">
+				<br>
+				</div>
+<!-- BOUTONS -->  
+				<button id="login" type="submit">Se connecter</button>
+				<button id="goRight" class="off">S'inscrire</button>
+<!-- FIN BOUTONS -->       
+    
+</form>
+
+
+<!--FIN FORM-->			
+		  	</div><!--row-->
+		</div><!--col-6-->
+	</div><!--right-->
+			
+			  
+</div><!-- toplayer-->
+</div><!--slidebox-->
+
+
+<!--///////////////////////////////////////////////////////-->
+
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/validetta.min.js"></script>
+<script src="js/validettaLang-fr-FR.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
